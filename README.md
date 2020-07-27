@@ -1,80 +1,78 @@
-# Unit 11 Express Homework: Note Taker
 
-## Description
+  ![Code Count](https://img.shields.io/github/languages/count/bdcoelho/note-taker) 
+  ![Main Code Base](https://img.shields.io/github/languages/top/bdcoelho/note-taker) 
+  ![License](https://img.shields.io/badge/license-MIT-blue) 
+  ![Version](https://img.shields.io/badge/version-1.0-red) 
+  ![Last Commit](https://img.shields.io/github/last-commit/bdcoelho/note-taker) 
+  ![Open Issues](https://img.shields.io/github/issues-raw/bdcoelho/note-taker) 
+  ![Repo Size](https://img.shields.io/github/repo-size/bdcoelho/note-taker)
 
-Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
+  # Welcome to Note Taker
 
-* The application frontend has already been created, it's your job to build the backend and connect the two.
 
-* The following HTML routes should be created:
+  ## Table of Contents
 
-  * GET `/notes` - Should return the `notes.html` file.
+  * [Description](#Description)
+  * [Demonstration](#Demonstration)
+  * [Setup](#Setup)
+  * [Usage](#Usage)
+  * [License](#License)
+  * [Contributions](#Contributions)
+  * [Version](#Version)
+  * [Tests](#Tests)
+  * [Questions](#Questions)
 
-  * GET `*` - Should return the `index.html` file
 
-* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
+  ## Description
 
-* The following API routes should be created:
+  This is an application to take and store notes. Notes can be deleted when no longer required. The application is hosted on heroku and can be accessed using a browser. Messages are stored on the server which runs using express.
 
-  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
 
-  * POST `/api/notes` - Should receive a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+  ## Live Application
 
-  * DELETE `/api/notes/:id` - Should receive a query parameter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+  Access the live application [here](https://desolate-meadow-17602.herokuapp.com/).
 
-## User Story
+  #### A screenshot of the application
 
-AS A user, I want to be able to write and save notes
+  ![Screenshot](./Assets/screenshot.png "Screenshot")
+  
+  ## Setup
 
-I WANT to be able to delete notes I've written before
+  No installation is required. The application can be accessed using the above link in a browser.
 
-SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
-## Business Context
+  ## Usage
 
-For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
+  While on the application page, create a title and enter your notes. Hit the save button at the top right of the screen to save the note. A new note can be created by clicking on the pencil icon at the top right of the screen. Your notes will be displayed by title on the left panel. Click on any of them to view the contents or on the bin icon to delete them.
 
-## Acceptance Criteria
 
-Application should allow users to create and save notes.
+  ## License
 
-Application should allow users to view previously saved notes.
+  ![License Badge](https://img.shields.io/badge/license-MIT-blue)
 
-Application should allow users to delete previously saved notes.
+  You may utilize this application under the terms of the [MIT license](assets/licences/MIT.txt).
 
-## Deploying the App
+  ## Contributions
 
-You will not be able to deploy your server side code on GitHub pages. This app should be deployed on Heroku. Carefully follow the [Heroku Guide](../04-Supplemental/HerokuGuide.md) for getting your app deployed on Heroku.
+  If you would like to add new features, make improvements or bug fixes, please make a pull request. I will review it and merge it into the application as necessary.
 
-- - -
 
-## Commit Early and Often
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+  ## Version
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+  ![Version Badge](https://img.shields.io/badge/version-1.0-red)
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
-Follow these guidelines for committing:
+  ## Tests
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+  No tests are currently available.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+  ## Questions
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+  If you have further questions or would like to see more features, please contact me via github or email:
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+  https://github.com/bdcoelho 
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+  ben_coelho@hotmail.com
 
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL of the deployed application. This should be the link to the url provided by Heroku. Be sure not to submit a link to the Heroku dashboard.
-
-* The URL of the GitHub repository
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+  
